@@ -1,0 +1,67 @@
+<!--
+    XML layout file untuk tata letak (layout) dari MainActivity.
+    LinearLayout digunakan untuk mengelompokkan elemen-elemen dalam tata letak secara vertikal.
+    android:layout_width dan android:layout_height digunakan untuk menentukan lebar dan tinggi LinearLayout.
+    android:orientation="vertical" menunjukkan bahwa anak-anak LinearLayout akan ditata secara vertikal.
+    android:gravity="center_horizontal" digunakan untuk menengahkan elemen-elemen secara horizontal.
+
+    Elemen-elemen dalam tata letak:
+    1. EditText (txt_title): Input untuk judul catatan.
+    2. EditText (txt_desc): Input untuk deskripsi catatan.
+    3. EditText (txt_date): Input untuk tanggal catatan.
+    4. Button (btnnn): Tombol untuk menambahkan data catatan.
+    5. Button (btn_update): Tombol untuk memperbarui data catatan.
+    6. ListView (listView): Daftar catatan yang akan ditampilkan.
+
+    @+id/ digunakan untuk memberikan identifikasi unik pada setiap elemen yang dapat digunakan dalam kode.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Input untuk judul catatan -->
+    <EditText
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"/>
+
+    <!-- Input untuk deskripsi catatan -->
+    <EditText
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"/>
+
+    <!-- Input untuk tanggal catatan -->
+    <EditText
+        android:id="@+id/txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"/>
+
+    <!-- Tombol untuk menambahkan data catatan -->
+    <Button
+        android:id="@+id/btnnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"/>
+
+    <!-- Tombol untuk memperbarui data catatan -->
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Data"/>
+
+    <!-- Daftar catatan yang akan ditampilkan  -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
